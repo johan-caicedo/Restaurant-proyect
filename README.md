@@ -1,2 +1,2 @@
 # Restaurant-proyect
-This project involves developing a website for a restaurant, designed to facilitate menu viewing, ordering, and customer management digitally. The platform allows users to navigate intuitively, view available products and prices, and place orders quickly and securely.
+Este proyecto se desarrollo con el fin de facilitar el pedido de comida en un restaurante de pollo, creado con HTML, CSS Y PHP
