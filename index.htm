@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú Restaurante Animado</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Animate.css para animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    /* Efecto hover en cards */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    /* Botón flotante para contacto o acción */
+    #btn-flotante {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #48ee11; /* rojo bootstrap */
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      border: none;
+      box-shadow: 0 5px 15px #000000;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    #btn-flotante:hover {
+      background-color: #000000;
+    }
+ 
+    .bg-custom {
+          background-color: #bdc3c7 ;
+        }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-custom sticky-top sticky-top animate__animated animate__fadeInDown">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Menú</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./code/pedidos.php">Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./code/login.php">
+            <i class="fa-solid fa-user"></i> Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Platillo 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+      <div class="card h-100 shadow-sm">
+        <img src="./img/R (1).jpg" class="card-img-top" alt="Platillo 1: Pollo asado con guarnición" />
+        <div class="card-body">
+          <h5 class="card-title">Platillo 1</h5>
+          <p class="card-text">Delicioso pollo asado acompañado con arroz y ensalada fresca.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platillo 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+      <div class="card h-100 shadow-sm">
+        <img src="./img/R (2).jpg" class="card-img-top" alt="Platillo 2: Pollo frito crujiente" />
+        <div class="card-body">
+          <h5 class="card-title">Platillo 2</h5>
+          <p class="card-text">Pollo frito crujiente servido con papas fritas y salsa especial.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platillo 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+      <div class="card h-100 shadow-sm">
+        <img src="./img/R (3).jpg" class="card-img-top" alt="Platillo 3: Brochetas de pollo" />
+        <div class="card-body">
+          <h5 class="card-title">Platillo 3</h5>
+          <p class="card-text">Brochetas de pollo marinadas y asadas, acompañadas de verduras.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platillo 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
+      <div class="card h-100 shadow-sm">
+        <img src="./img/R.jpg" class="card-img-top" alt="Platillo 4: Pollo a la parrilla" />
+        <div class="card-body">
+          <h5 class="card-title">Platillo 4</h5>
+          <p class="card-text">Jugoso pollo a la parrilla con especias y acompañamiento de papas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platillo 5 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 0.9s;">
+      <div class="card h-100 shadow-sm">
+        <img src="./img/pollo5.jpg" class="card-img-top" alt="Platillo 5: Pollo guisado" />
+        <div class="card-body">
+          <h5 class="card-title">Platillo 5</h5>
+          <p class="card-text">Pollo guisado en salsa tradicional con arroz blanco y plátano.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Escenario (Restaurante) -->
+    <div class="col-sm-6 col-md-4 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 1.1s;">
+      <div class="card h-100 shadow-sm">
+        <img src="./img/restaurant.jpg" class="card-img-top" alt="Escenario del restaurante" />
+        <div class="card-body">
+          <h5 class="card-title">Nuestro Restaurante</h5>
+          <p class="card-text">Un ambiente acogedor para disfrutar de la mejor comida casera.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Botón flotante -->
+<button id="btn-flotante" title="Contáctanos">
+  <i class="fa-solid fa-phone"></i>
+</button>
+
+<!-- Footer -->
+<footer class="bg-custom sticky-top text-white text-center py-3 mt-5 animate__animated animate__fadeInUp">
+  &copy; 2025 Restaurante Los Pollos Hermanos - Todos los derechos reservados
+</footer>
+
+<!-- Bootstrap JS Bundle con Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Acción para el botón flotante (ejemplo: abrir WhatsApp o llamar)
+  document.getElementById('btn-flotante').addEventListener('click', () => {
+    // Abre WhatsApp en web con número de contacto (ejemplo)
+    window.open('https://wa.me/573112784052', '_blank');
+  });
+</script>
+
+</body>
+</html>
